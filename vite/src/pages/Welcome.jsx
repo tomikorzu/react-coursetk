@@ -23,7 +23,7 @@ const Welcome = () => {
     return () => {
       startBtn.removeEventListener("click", start);
     };
-  });
+  }, [navigate]);
   return (
     <>
       <main className="fade-in-large">
