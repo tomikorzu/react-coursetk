@@ -42,7 +42,7 @@ const Welcome = () => {
             text="Tomás Korzusehec"
             classId="portfolio-link"
             onClick={() =>
-              MainFunctions.redirectPage("https://myportfoliotk.vercel.app")
+              MainFunctions.redirectToExternalPage("https://myportfoliotk.vercel.app")
             }
           />
         </p>

@@ -10,8 +10,12 @@ const redirectPage = (url) => {
   });
 };
 
+const redirectToExternalPage = (url) => {
+  window.open(url, "_blank");
+}
+
 const goBack = (navigate, url) => {
   navigate(url);
 };
 
-export default { redirectPage, goBack };
+export default { redirectPage, goBack, redirectToExternalPage };
