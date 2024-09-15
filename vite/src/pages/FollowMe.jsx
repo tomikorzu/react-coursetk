@@ -13,25 +13,22 @@ const FollowMe = () => {
     main.classList.add("fade-in");
 
     const backBtn = document.querySelector(".back-btn");
-    if (backBtn) {
-      backBtn.classList.add("fade-left");
-      backBtn.addEventListener("click", () =>
-        mainFunctions.goBack(navigate, "/")
-      );
+    backBtn.classList.add("fade-left");
 
-      // Limpieza del efecto
-      return () => {
-        backBtn.removeEventListener("click", () =>
-          mainFunctions.goBack(navigate, "/")
-        );
-        main.classList.remove("fade-in");
-      };
-    }
+    backBtn.addEventListener("click", () => {
+      main.classList.add("fade-out");
+      setTimeout(() => {
+        mainFunctions.goBack(navigate, "/");
+        main.classList.remove("fade-out"); 
+      }, 600);
+    });
   }, [navigate]);
 
   return (
     <main>
-      <button className="back-btn"><i className="fa-solid fa-arrow-left"></i></button>
+      <button className="back-btn">
+        <i className="fa-solid fa-arrow-left"></i>
+      </button>
       <h1 className="follow-title">
         Follow me on <i className="fa-brands fa-github"></i>
       </h1>

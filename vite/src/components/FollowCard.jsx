@@ -6,22 +6,6 @@ const FollowCard = ({ userName, fullName }) => {
   const navigate = useNavigate();
   const [isFollowing, setIsFollowing] = useState(false);
 
-  useEffect(() => {
-    const main = document.querySelector("main");
-    if (main) main.classList.add("fade-in");
-
-    const backBtn = document.querySelector(".back-btn");
-    if (backBtn) {
-      backBtn.classList.add("fade-left");
-      const handleBackClick = () => mainFunctions.goBack(navigate, "/");
-      backBtn.addEventListener("click", handleBackClick);
-
-      return () => {
-        backBtn.removeEventListener("click", handleBackClick);
-        if (main) main.classList.remove("fade-in");
-      };
-    }
-  }, [navigate]);
 
   const handleFollowClick = () => {
     setIsFollowing((prevState) => !prevState);
