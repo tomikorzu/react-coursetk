@@ -1,6 +1,5 @@
 import "../assets/welcome.css";
 import MainFunctions from "../utils/mainFunctions.js";
-import Button from "../components/Button.jsx";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import svgReact from "../assets/img/react.svg";
@@ -33,18 +32,21 @@ const Welcome = () => {
         <p className="description">
           Here we will resolve all of your questions
         </p>
-        <Button text="Get Started" classId="start-btn" />
+        <button className="start-btn">Get Started!</button>
       </main>
       <footer id="footer">
         <p className="copyright">
           © Copyright
-          <Button
-            text="Tomás Korzusehec"
-            classId="portfolio-link"
+          <button
+            className="portfolio-link"
             onClick={() =>
-              MainFunctions.redirectToExternalPage("https://myportfoliotk.vercel.app")
+              MainFunctions.redirectToExternalPage(
+                "https://myportfoliotk.vercel.app"
+              )
             }
-          />
+          >
+            Tomás Korzusehec
+          </button>
         </p>
       </footer>
     </>

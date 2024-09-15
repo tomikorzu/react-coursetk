@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "../components/Button";
 import "../assets/FollowMe.css";
 import mainFunctions from "../utils/mainFunctions";
 import { useNavigate } from "react-router-dom";
@@ -32,10 +31,7 @@ const FollowMe = () => {
 
   return (
     <main>
-      <Button
-        text={<i className="fa-solid fa-arrow-left"></i>}
-        classId={"back-btn"}
-      />
+      <button className="back-btn"><i className="fa-solid fa-arrow-left"></i></button>
       <h1 className="follow-title">
         Follow me on <i className="fa-brands fa-github"></i>
       </h1>
