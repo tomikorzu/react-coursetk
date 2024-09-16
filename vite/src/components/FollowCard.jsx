@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import mainFunctions from "../utils/mainFunctions";
+import axios from "axios";
 
 const FollowCard = ({
   userName,
@@ -10,8 +10,13 @@ const FollowCard = ({
   const navigate = useNavigate();
   const [isFollowing, setIsFollowing] = useState(initialIsFollowing);
 
-  const handleFollowClick = () => {
-    setIsFollowing((prevState) => !prevState);
+  const handleFollowClick = async () => {
+    const clientId = "Ov23liW47AA5lCtssvIj";
+    const redirectUri = "https://react-coursetk.vercel.app/auth/callback";
+    const scope = "user";
+
+    // Redirigir al usuario para autenticación
+    window.location.href = `https://github.com/login/oauth/authorize?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scope}`;
   };
 
   return (
