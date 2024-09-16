@@ -5,7 +5,7 @@ import mainFunctions from "../utils/mainFunctions";
 const FollowCard = ({
   userName,
   fullName,
-}) => {
+}) => { 
   return (
     <article className="article-follow">
       <img
