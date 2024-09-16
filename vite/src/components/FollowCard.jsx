@@ -2,10 +2,13 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import mainFunctions from "../utils/mainFunctions";
 
-const FollowCard = ({ userName, fullName }) => {
+const FollowCard = ({
+  userName,
+  fullName,
+  isFollowing: initialIsFollowing,
+}) => {
   const navigate = useNavigate();
-  const [isFollowing, setIsFollowing] = useState(false);
-
+  const [isFollowing, setIsFollowing] = useState(initialIsFollowing);
 
   const handleFollowClick = () => {
     setIsFollowing((prevState) => !prevState);

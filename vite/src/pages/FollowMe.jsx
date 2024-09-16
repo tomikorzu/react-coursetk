@@ -19,7 +19,7 @@ const FollowMe = () => {
       main.classList.add("fade-out");
       setTimeout(() => {
         mainFunctions.goBack(navigate, "/");
-        main.classList.remove("fade-out"); 
+        main.classList.remove("fade-out");
       }, 600);
     });
   }, [navigate]);
@@ -32,8 +32,14 @@ const FollowMe = () => {
       <h1 className="follow-title">
         Follow me on <i className="fa-brands fa-github"></i>
       </h1>
-      <FollowCard userName="tomikorzu" fullName="Tomás Korzusehec" />
-      <FollowCard userName="react" fullName="React" />
+      {mainFunctions.usersToFollow.map((user) => (
+        <FollowCard
+          key={user.userName}
+          userName={user.userName}
+          fullName={user.fullName}
+          isFollowing={user.isFollowing}
+        />
+      ))}
     </main>
   );
 };

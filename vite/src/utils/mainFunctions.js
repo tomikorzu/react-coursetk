@@ -18,4 +18,12 @@ const goBack = (navigate, url) => {
   navigate(url);
 };
 
-export default { redirectPage, goBack, redirectToExternalPage };
+const usersToFollow = [
+  {
+    userName: 'tomikorzu',
+    fullName: 'Tomás Korzusehec',
+    isFollowing: false,
+  }
+]
+
+export default { redirectPage, goBack, redirectToExternalPage, usersToFollow };
