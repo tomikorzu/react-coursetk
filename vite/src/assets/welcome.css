@@ -51,6 +51,12 @@ main {
   background-color: transparent;
   border-radius: 0%;
   margin-left: 5px;
+  transition: all .4s;
+}
+
+.portfolio-link:hover {
+  color: var(--btns);
+  border-bottom: var(--btns) 1px solid;
 }
 
 @keyframes reactRotate {
