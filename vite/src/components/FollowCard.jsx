@@ -5,15 +5,7 @@ import mainFunctions from "../utils/mainFunctions";
 const FollowCard = ({
   userName,
   fullName,
-  isFollowing: initialIsFollowing,
 }) => {
-  const navigate = useNavigate();
-  const [isFollowing, setIsFollowing] = useState(initialIsFollowing);
-
-  const handleFollowClick = () => {
-    setIsFollowing((prevState) => !prevState);
-  };
-
   return (
     <article className="article-follow">
       <img
@@ -26,10 +18,10 @@ const FollowCard = ({
         <p className="user-alias">@{userName}</p>
       </div>
       <button
-        className={`follow-btn ${isFollowing ? "unfollow" : ""}`}
-        onClick={handleFollowClick}
+        className={`follow-btn`}
+        onClick={() => mainFunctions.redirectToExternalPage('https://github.com/' + userName)}
       >
-        {isFollowing ? "Unfollow" : "Follow"}
+        Follow
       </button>
     </article>
   );

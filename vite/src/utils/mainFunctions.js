@@ -22,7 +22,6 @@ const usersToFollow = [
   {
     userName: 'tomikorzu',
     fullName: 'Tomás Korzusehec',
-    isFollowing: false,
   }
 ]
 

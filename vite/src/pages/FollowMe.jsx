@@ -37,7 +37,6 @@ const FollowMe = () => {
           key={user.userName}
           userName={user.userName}
           fullName={user.fullName}
-          isFollowing={user.isFollowing}
         />
       ))}
     </main>
