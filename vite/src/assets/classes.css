@@ -1,0 +1,50 @@
+.classes-container {
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.article-class {
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #3e4552;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  gap: 15px;
+  align-items: center;
+}
+.class {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.description-class {
+  color: #e2e2e2;
+}
+.content-container-class {
+  list-style: auto;
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  list-style-type: disc;
+}
+.content-container-class li{
+    color: #e2e2e2;
+}
+.h4-contents {
+  margin-top: 10px;
+}
+.class-btn {
+  width: fit-content;
+  background-color: var(--btns);
+  transition: all 0.4s;
+}
+.class-btn:hover {
+  background-color: var(--btns-hover);
+}

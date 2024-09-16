@@ -2,10 +2,12 @@ import React from "react";
 import ClassCard from "../components/ClassCard.jsx";
 import variables from "../utils/variables.js";
 import "../assets/classes.css";
+import NavbarMenu from "../components/NavbarMenu.jsx";
 
 const Classes = () => {
   return (
-    <main>
+    <main className="fade-in">
+      {/* <NavbarMenu /> */}
       <h1 className="follow-title">Classes</h1>
       <p className="description">Here you will find all the classes</p>
       <div className="classes-container">
