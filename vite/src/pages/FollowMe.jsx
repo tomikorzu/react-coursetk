@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "../assets/FollowMe.css";
-import mainFunctions from "../utils/mainFunctions";
+import variables from "../utils/variables";
 import { useNavigate } from "react-router-dom";
 import FollowCard from "../components/FollowCard";
 
@@ -53,7 +53,7 @@ const FollowMe = () => {
       <h1 className="follow-title">
         Follow me on <i className="fa-brands fa-github"></i>
       </h1>
-      {mainFunctions.usersToFollow.map((user) => (
+      {variables.usersToFollow.map((user) => (
         <FollowCard
           key={user.userName}
           userName={user.userName}
