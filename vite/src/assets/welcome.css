@@ -7,7 +7,7 @@ main {
   min-height: 100vh;
   gap: 10px;
 }
-.react-image{
+.react-image {
   width: 100px;
   height: 100px;
   animation: reactRotate 4s infinite ease-in-out;
@@ -25,11 +25,11 @@ main {
 }
 .start-btn {
   margin-top: 10px;
-  background-color: #1eb12e;
+  background-color: #14a9e2;
   transition: background 0.4s;
 }
 .start-btn:hover {
-  background-color: #2e9a40;
+  background-color: #138ab8;
 }
 #footer {
   position: fixed;
