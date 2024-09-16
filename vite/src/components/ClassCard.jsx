@@ -6,6 +6,7 @@ const ClassCard = ({ title, description, content }) => {
       <div className="class">
         <h2 className="title-class">{title}</h2>
         <p className="description-class">{description}</p>
+        <h4 className="h4-contents">Contents</h4>
         <ul className="content-container-class">
           {content}
         </ul>
