@@ -6,6 +6,11 @@
   --text-secondary: #f1f1f1;
   --button-check: #f5f5f5;
   --secondary-color: #61dafb;
+  --btns: #14a9e2;
+  --btns-hover: #138ab8;
+  --primary-color: #ffffff;
+  --primary-color-hover: #ddd;
+  --menu-color: #3e4552;
 }
 body {
   background-color: var(--background);

@@ -12,17 +12,10 @@ const redirectPage = (url) => {
 
 const redirectToExternalPage = (url) => {
   window.open(url, "_blank");
-}
+};
 
 const goBack = (navigate, url) => {
   navigate(url);
 };
 
-const usersToFollow = [
-  {
-    userName: 'tomikorzu',
-    fullName: 'Tomás Korzusehec',
-  }
-]
-
-export default { redirectPage, goBack, redirectToExternalPage, usersToFollow };
+export default { redirectPage, goBack, redirectToExternalPage };

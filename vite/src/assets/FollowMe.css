@@ -24,7 +24,7 @@
   display: flex;
   align-items: center;
   gap: 15px;
-  background-color: #3e4552;
+  background-color: var(--menu-color);
   border-radius: 10px;
   padding: 20px;
   margin: 0 20px;
@@ -48,17 +48,17 @@
   font-size: 0.875em;
 }
 .follow-btn {
-  background-color: #ffffff;
-  border-radius: 25px;
-  color: #330;
-  padding: 10px 15px;
+    background-color: var(--primary-color);
+    border-radius: 25px;
+    color: #330;
+    padding: 10px 15px;
   display: block;
   transition: all 0.4s;
   height: max-content;
   font-size: 14px;
 }
 .follow-btn:hover {
-  background-color: #ddd;
+    background-color: var(--primary-color-hover);
 }
 
 .unfollow {
