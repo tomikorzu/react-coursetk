@@ -25,25 +25,27 @@ const NavbarMenu = ({ items }) => {
   }, []);
 
   return (
-    <nav className="navbar">
+    <>
       <button className="toggle-btn">
         <span className="line line1"></span>
         <span className="line line2"></span>
         <span className="line line3"></span>
       </button>
-      <ul className="navbar-menu">
-        {items.map((item, index) => (
-          <li key={index} className="navbar-item">
-            <button
-              className="navbar-link"
-              onClick={() => handleLinkButton(item.url)}
-            >
-              {item.item}
-            </button>
-          </li>
-        ))}
-      </ul>
-    </nav>
+      <nav className="navbar">
+        <ul className="navbar-menu">
+          {items.map((item, index) => (
+            <li key={index} className="navbar-item">
+              <button
+                className="navbar-link"
+                onClick={() => handleLinkButton(item.url)}
+              >
+                {item.item}
+              </button>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </>
   );
 };
 
