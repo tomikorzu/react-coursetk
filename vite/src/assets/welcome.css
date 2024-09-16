@@ -25,11 +25,11 @@ main {
 }
 .start-btn {
   margin-top: 10px;
-  background-color: #1eb12e;
+  background-color: var(--btns);
   transition: background 0.4s;
 }
 .start-btn:hover {
-  background-color: #2e9a40;
+  background-color: var(--btns-hover);
 }
 #footer {
   position: fixed;
