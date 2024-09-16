@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "../assets/FollowMe.css";
 import variables from "../utils/variables";
+import mainFunctions from "../utils/mainFunctions";
 import { useNavigate } from "react-router-dom";
 import FollowCard from "../components/FollowCard";
 
