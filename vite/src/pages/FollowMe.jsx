@@ -1,9 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../assets/FollowMe.css";
 import mainFunctions from "../utils/mainFunctions";
 import { useNavigate } from "react-router-dom";
 import FollowCard from "../components/FollowCard";
-import { useEffect } from "react";
 
 const FollowMe = () => {
   const navigate = useNavigate();
@@ -15,13 +14,35 @@ const FollowMe = () => {
     const backBtn = document.querySelector(".back-btn");
     backBtn.classList.add("fade-left");
 
-    backBtn.addEventListener("click", () => {
+    const handleBackClick = () => {
       main.classList.add("fade-out");
       setTimeout(() => {
         mainFunctions.goBack(navigate, "/");
         main.classList.remove("fade-out");
       }, 600);
-    });
+    };
+
+    backBtn.addEventListener("click", handleBackClick);
+
+    const continueBtn = document.getElementById("continue-btn");
+    const handleContinueClick = () => {
+      main.classList.add("fade-out");
+      setTimeout(() => {
+        navigate("/Classes");
+        main.classList.remove("fade-out");
+      }, 600);
+    };
+
+    if (continueBtn) {
+      continueBtn.addEventListener("click", handleContinueClick);
+    }
+
+    return () => {
+      backBtn.removeEventListener("click", handleBackClick);
+      if (continueBtn) {
+        continueBtn.removeEventListener("click", handleContinueClick);
+      }
+    };
   }, [navigate]);
 
   return (
@@ -37,8 +58,10 @@ const FollowMe = () => {
           key={user.userName}
           userName={user.userName}
           fullName={user.fullName}
+          isFollowing={user.isFollowing}
         />
       ))}
+      <button className="start-btn" id="continue-btn">Continue</button>
     </main>
   );
 };
