@@ -7,7 +7,7 @@ main {
   min-height: 100vh;
   gap: 10px;
 }
-.react-image{
+.react-image {
   width: 100px;
   height: 100px;
   animation: reactRotate 4s infinite ease-in-out;

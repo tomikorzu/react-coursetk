@@ -62,11 +62,11 @@
 }
 
 .unfollow {
-    background-color: #555;
-    color: #f5f5f5;
+  background-color: #555;
+  color: #f5f5f5;
 }
-.unfollow:hover{
-    background-color: #777;
+.unfollow:hover {
+  background-color: #777;
 }
 
 @media (min-width: 768px) {
