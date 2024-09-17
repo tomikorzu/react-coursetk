@@ -5,7 +5,7 @@
   clip-path: circle(27px at calc(100% - 50px) calc(0% + 40px));
   width: 100%;
   height: 100%;
-  transition: all 1.25s ease-in-out;
+  transition: clip-path 800ms ease-out;
 }
 
 .navbar-menu {
@@ -17,12 +17,7 @@
   justify-content: center;
   width: 100%;
   height: 100%;
-  /* transform: translateX(-5px); */
   transition: all 1.5s;
-}
-.fade-in-menu{
-  /* transform: translateX(0); */
-  /* animation: fadeInMenu 3s; */
 }
 .toggle-btn {
   position: fixed;
@@ -39,7 +34,7 @@
   background-color: transparent;
 }
 .clip {
-  clip-path: circle(201.5% at calc(100% - 50px) calc(0% + 40px));
+  clip-path: circle(135% at calc(100% - 50px) calc(0% + 40px));
 }
 .line {
   transition: all 0.4s;
