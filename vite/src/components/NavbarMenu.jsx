@@ -15,6 +15,8 @@ const NavbarMenu = ({ items }) => {
       toggleBtn.classList.toggle("active");
       const navbar = document.querySelector(".navbar");
       navbar.classList.toggle("clip");
+      const navbarMenu = document.querySelector(".navbar-menu");
+      navbarMenu.classList.toggle("fade-in-menu");
     };
 
     toggleBtn.addEventListener("click", handleToggle);

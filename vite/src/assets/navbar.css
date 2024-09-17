@@ -2,8 +2,10 @@
   position: fixed;
   z-index: 10;
   background-color: var(--menu-color);
+  clip-path: circle(25px at calc(100% - 50px) calc(0% + 40px));
   width: 100%;
   height: 100%;
+  transition: all 1.25s ease-in-out;
 }
 
 .navbar-menu {
@@ -15,13 +17,19 @@
   justify-content: center;
   width: 100%;
   height: 100%;
+  /* transform: translateX(-5px); */
+  transition: all 1.5s;
+}
+.fade-in-menu{
+  /* transform: translateX(0); */
+  /* animation: fadeInMenu 3s; */
 }
 .toggle-btn {
   position: fixed;
   display: flex;
   flex-direction: column;
-  top: 5%;
-  right: 5%;
+  top: calc(0% + 27px);
+  left: calc(100% - 64px);
   z-index: 12;
   width: 28px;
   padding: 0;
@@ -31,15 +39,7 @@
   background-color: transparent;
 }
 .clip {
-  animation: circle 1.5s forwards ease-in-out;
-}
-@keyframes circle {
-  from {
-    clip-path: circle(5% at 93% 7%);
-  }
-  100% {
-    clip-path: circle(201.5% at 93% 7%);
-  }
+  clip-path: circle(201.5% at calc(100% - 50px) calc(0% + 40px));
 }
 .line {
   transition: all 0.4s;
