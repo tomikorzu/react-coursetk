@@ -37,12 +37,14 @@ const NavbarMenu = ({ items }) => {
         <ul className="navbar-menu">
           {items.map((item, index) => (
             <li key={index} className="navbar-item">
-              <button
-                className="navbar-link"
-                onClick={() => handleLinkButton(item.url)}
-              >
-                {item.item}
-              </button>
+              <div className="button-container">
+                <button
+                  className="navbar-link"
+                  onClick={() => handleLinkButton(item.url)}
+                >
+                  {item.item}
+                </button>
+              </div>
             </li>
           ))}
         </ul>
