@@ -1,3 +1,8 @@
+.classes-main{
+  margin-bottom: 40px;
+
+}
+
 .classes-container {
   margin: 0 20px;
   display: flex;
@@ -10,21 +15,23 @@
 
 .article-class {
   border-radius: 10px;
-  padding: 20px;
   background-color: #3e4552;
-  max-width: 450px;
   display: flex;
   flex-direction: column;
   text-align: start;
-  gap: 15px;
   align-items: center;
 }
 .class {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  margin: 20px;
 }
-.follow-title{
+.image-class {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.follow-title {
   margin-top: 40px;
   margin-bottom: 0;
 }
@@ -38,8 +45,8 @@
   padding-left: 15px;
   list-style-type: disc;
 }
-.content-container-class li{
-    color: #e2e2e2;
+.content-container-class li {
+  color: #e2e2e2;
 }
 .h4-contents {
   margin-top: 10px;
@@ -51,10 +58,4 @@
 }
 .class-btn:hover {
   background-color: var(--btns-hover);
-}
-
-@media (min-width: 1024px){
-  .follow-title{
-    margin-top: 0;
-  }
 }
