@@ -15,6 +15,8 @@ const NavbarMenu = ({ items }) => {
       toggleBtn.classList.toggle("active");
       const navbar = document.querySelector(".navbar");
       navbar.classList.toggle("clip");
+      const navbarMenu = document.querySelector(".navbar-menu");
+      navbarMenu.classList.toggle("fade-in-menu");
     };
 
     toggleBtn.addEventListener("click", handleToggle);
@@ -25,25 +27,27 @@ const NavbarMenu = ({ items }) => {
   }, []);
 
   return (
-    <nav className="navbar">
+    <>
       <button className="toggle-btn">
         <span className="line line1"></span>
         <span className="line line2"></span>
         <span className="line line3"></span>
       </button>
-      <ul className="navbar-menu">
-        {items.map((item, index) => (
-          <li key={index} className="navbar-item">
-            <button
-              className="navbar-link"
-              onClick={() => handleLinkButton(item.url)}
-            >
-              {item.item}
-            </button>
-          </li>
-        ))}
-      </ul>
-    </nav>
+      <nav className="navbar">
+        <ul className="navbar-menu">
+          {items.map((item, index) => (
+            <li key={index} className="navbar-item">
+              <button
+                className="navbar-link"
+                onClick={() => handleLinkButton(item.url)}
+              >
+                {item.item}
+              </button>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </>
   );
 };
 
