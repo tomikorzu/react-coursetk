@@ -8,13 +8,13 @@ import BackButton from "../components/BackButton.jsx";
 const Classes = () => {
   return (
     <>
+      <NavbarMenu
+        items={[
+          { item: "Home", url: "/" },
+          { item: "Follow Me", url: "/FollowMe" },
+        ]}
+      />
       <main className="fade-in">
-        <NavbarMenu
-          items={[
-            { item: "Home", url: "/" },
-            { item: "Follow Me", url: "/FollowMe" },
-          ]}
-        />
         <BackButton url={"/FollowMe"} />
         <h1 className="follow-title">Classes</h1>
         <p className="description">Here you will find all the classes</p>
