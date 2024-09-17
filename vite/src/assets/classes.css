@@ -52,3 +52,9 @@
 .class-btn:hover {
   background-color: var(--btns-hover);
 }
+
+@media (min-width: 1024px){
+  .follow-title{
+    margin-top: 0;
+  }
+}
