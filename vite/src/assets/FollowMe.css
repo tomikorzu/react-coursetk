@@ -11,6 +11,7 @@
   padding: 7.5px;
   transition: all 0.4s;
   color: #ffffff80;
+  display: flex;
 }
 .back-btn:hover {
   border-color: #fff;
