@@ -14,7 +14,7 @@ const Classes = () => {
           { item: "Follow Me", url: "/FollowMe" },
         ]}
       />
-      <main className="fade-in">
+      <main className="fade-in classes-main">
         <BackButton url={"/FollowMe"} />
         <h1 className="follow-title">Classes</h1>
         <p className="description">Here you will find all the classes</p>
@@ -22,6 +22,7 @@ const Classes = () => {
           {variables.classesCards.map((classItem) => (
             <ClassCard
               key={classItem.title}
+              image={classItem.img}
               title={classItem.title}
               description={classItem.description}
               content={classItem.content.map((item, index) => (

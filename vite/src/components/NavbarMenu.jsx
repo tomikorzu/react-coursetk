@@ -6,7 +6,11 @@ const NavbarMenu = ({ items }) => {
   const navigate = useNavigate();
 
   const handleLinkButton = (url) => {
-    navigate(url);
+    document.querySelector('body').classList.add("fade-out");
+    setTimeout(() => {
+      navigate(url);
+      document.querySelector('body').classList.remove("fade-out");
+    }, 500);
   };
 
   useEffect(() => {
