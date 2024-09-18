@@ -1,3 +1,7 @@
+import class1 from "../assets/img/class1.svg";
+import class2 from "../assets/img/class2.svg";
+import class3 from "../assets/img/class3.svg";
+
 const usersToFollow = [
   {
     userName: "tomikorzu",
@@ -7,6 +11,7 @@ const usersToFollow = [
 
 const classesCards = [
   {
+    img: class1,
     title: "Introduction to React",
     description:
       "This class introduces the React framework, its main concepts, and its importance in modern web development",
@@ -17,6 +22,7 @@ const classesCards = [
     ],
   },
   {
+    img: class2,
     title: "Vite",
     description:
       "This framework use react and vite to create a modern web application.",
@@ -27,7 +33,7 @@ const classesCards = [
     ],
   },
   {
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbW19RhRfaloxQxBD3tVn9Joxo9RasVXSmew&s",
+    img: class3,
     title: "Components",
     description:
       "This class explains the concept of components in React and how to create them.",

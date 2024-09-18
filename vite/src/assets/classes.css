@@ -26,6 +26,7 @@
   flex-direction: column;
   gap: 5px;
   margin: 20px;
+  width: 300px;
 }
 .image-class {
   width: 100%;
